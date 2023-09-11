@@ -1,0 +1,81 @@
+ *{
+        margin:0px;
+        padding:0px;
+        box-sizing:border-box;
+    }
+    a{
+        text-decoration: none;
+        color:white;
+    }
+    body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            background-image: url("img/K1.jpeg");
+            background-size: cover;
+              background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position: center center;
+        }
+
+    h1{
+        color:red;
+        font-size: 40px;
+    text-shadow: 2px 2px 8px green;
+    animation: fadeIn 3s ease-in-out;
+    }
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Apply animations to elements */
+#ki div {
+    animation: fadeIn 1s ease-in-out;
+    cursor: pointer;
+}
+
+
+/* Apply hover effect on the options */
+#ki div:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 10px greenyellow;
+}
+
+/* Apply hover effect on the START button */
+button:hover {
+    transform: scale(1.1);
+}
+/* Change the background color */
+body {
+    background-color: #f0f0f0;
+}
+
+/* Change button color */
+button {
+    background-color: rgba(220, 139, 1, 1);
+}
+/* Add transitions for smoother effects */
+#ki div, button {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+}
+/* Adjust box shadow properties */
+#ki div {
+    box-shadow: 2px 2px 10px rgba(0, 128, 0, 0.5);
+}
+
+button {
+    box-shadow: 1px 1px 5px rgba(0, 128, 0, 0.5);
+}
